@@ -1,0 +1,49 @@
+.wrapper-image
+    background: url(../img/head.jpg) center/cover no-repeat
+    width: 100%
+    min-height: 940px
+.header
+    .container
+        min-height: 160px
+        justify-content: space-between 
+    &-side
+        max-width: 925px
+        width: 100%
+        display: flex
+        &__phone
+            max-width: 255px
+            height: 64px
+            border-radius: 4px
+            border: 2px solid $green
+            color: $white
+            font-size: 24px
+            +comfort-bold
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            padding-right: 24px
+            position: relative
+            margin-left: 59px
+            &::after
+                content: url(../img/woman-phone.png)
+                position: absolute
+                top: 12px
+                left: 15px
+.nav
+    &-list
+        margin: 15px 0 0
+        padding: 0
+        list-style: none
+        &__item
+            margin-right: 15px
+        &__link
+            color: $white  
+            +comfort-bold
+            transition: .3s
+            padding: 5px 8px 15px
+            border-bottom: 2px solid transparent
+            font-size: 22px
+            &:hover
+                color: $green      
+                border-bottom: 2px solid $green
