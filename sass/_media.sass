@@ -204,6 +204,43 @@
                 margin: auto
         &__text
             text-align: center
+    .burger
+        display: block
+    .nav
+        width: 100%
+        position: absolute
+        top: 50px
+        left: 0
+        background-color: $white
+        z-index: 20
+        &-list
+            margin: 0
+            flex-direction: column
+            &__item
+                margin: 0
+            &__link
+                display: block
+                padding: 10px
+                color: $green
+    .header
+        .container
+            position: relative
+            padding: 0
+        &-side
+            position: absolute
+            max-width: none
+            &__phone
+                position: absolute
+                top: -32px
+                left: 50%
+                transform: translateX(-50%)
+    .need
+        &-text
+            &__title
+                left: 19%
+    .logo
+        margin-left: 0
+        padding-left: 15px
 @media (max-width: 992px)
     .payment
         &__line
@@ -217,3 +254,189 @@
             &s
                 flex-direction: column
                 align-items: center
+    .need
+        &-text
+            &__title
+                top: 13%
+                left: 50%   
+                transform: translateX(-50%)
+            &__subtitle
+                width: 100%
+                text-align: center
+@media (max-width: 800px)                
+    .offer
+        &-block
+            max-width: 450px
+            &__link
+                margin: 25px auto
+    .burger
+        right: 10px
+    .header
+        .container
+            padding: 0
+        &-side
+            &__phone
+                display: none
+    .logo
+        padding-left: 15px
+    .form
+        &__block
+            flex-direction: column
+            align-items: center
+        &-block
+            &__phone
+                margin: auto
+            &__button
+                margin: auto
+            span
+                margin: 15px 0
+            &__text
+                margin-left: 55px
+                padding-left: 0
+    .footer
+        &-block
+            &s
+                flex-direction: column
+                align-items: center
+            &__logo
+                display: block
+                img
+                    display: block
+                    margin: auto
+    .list
+        &__link
+            text-align: center
+@media (max-width: 750px)
+    .layout
+        &-block
+            &s
+                flex-direction: column
+                align-items: center 
+    .need
+        &-block
+            padding: 0 10px
+            &__link
+                margin: 50px auto  
+    .footer
+        &__text 
+            line-height: 26px              
+@media (max-width: 700px)
+    .benefits
+        &-block
+            &__boxes
+                flex-direction: column
+        &-btn 
+            flex-direction: column
+            &__link
+                &-left                         
+                    margin-right: 0
+    .need
+        &-text
+            &__title
+                top: 15%
+                font-size: 60px
+                line-height: 80px
+            &__subtitle
+                font-size: 28px
+@media (max-width: 520px)
+    .offer
+        &-block
+            &__item
+                padding-left: 25px
+@media (max-width: 425px)
+    .burger
+        top: -10px
+    .do
+        padding-bottom: 30px
+        &-block
+            &__title
+                margin: 30px 0 15px
+            p
+                font-size: 18px
+                line-height: 26px
+    .offer
+        padding: 0
+        &-block
+            &__title
+                font-size: 24px
+                margin: 0 0 25px
+            &__item
+                padding-left: 35px
+                &::before
+                    left: 0
+        &-form
+            padding: 25px 15px 40px
+    .form
+        &-block
+            flex-direction: column
+            &__text
+                margin-top: 60px
+                margin-left: 0
+            &__label
+                margin-top: 0
+    .need
+        &-text
+            &__subtitle
+                top: 30%
+            &__play
+                top: 34%
+        &-block
+            &__item
+                display: flex
+@media (max-width: 380px)
+    .logo
+        padding-left: 5px
+    .need
+        &-text
+            min-height: 420px
+            &__title
+                font-size: 50px
+                line-height: 66px
+                top: 2%
+            &__subtitle
+                font-size: 24px
+                top: 16%
+            &__play
+                top: 20%
+                font-size: 18px
+                &::before
+                    margin-right: 15px   
+        &-block
+            &__title
+                font-size: 30px
+    .benefits
+        padding: 70px 0
+        &-block
+            &__title
+                font-size: 28px
+                line-height: normal
+                margin: 0 0 30px
+    .do
+        &-block
+            &__title
+                font-size: 30px
+                margin: 30px 0
+    .footer
+        padding: 50px 0
+        &-block
+            &__description
+                font-size: 20px
+                line-height: normal  
+    .form
+        &-block
+            &__indicator
+                margin-left: 0
+                left: 50%
+                transform: translateX(-50%)
+            &__text
+                text-align: center 
+    .content
+        &-block
+            flex-direction: column
+            height: auto
+            padding: 25px
+            &__title
+                text-align: center   
+                margin: 12px 0 
+            &__description
+                margin-left: 0                       
