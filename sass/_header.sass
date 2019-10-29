@@ -7,7 +7,7 @@
         min-height: 160px
         justify-content: space-between 
     &-side
-        max-width: 925px
+        max-width: 1020px
         width: 100%
         display: flex
         &__phone
@@ -24,7 +24,7 @@
             justify-content: flex-end
             padding-right: 24px
             position: relative
-            margin-left: 59px
+            margin-left: auto
             &::after
                 content: url(../img/woman-phone.png)
                 position: absolute
@@ -32,12 +32,15 @@
                 left: 15px
 .nav
     &-list
-        margin: 15px 0 0
+        margin: 20px 0 0
         padding: 0
         list-style: none
         &__item
-            margin-right: 15px
+            margin-right: 40px
+            &:last-child
+                margin-right: 0
         &__link
+            letter-spacing: -0.11px
             color: $white  
             +comfort-bold
             transition: .3s
@@ -47,3 +50,6 @@
             &:hover
                 color: $green      
                 border-bottom: 2px solid $green
+.logo
+    margin-top: -15px
+    margin-left: -8px
