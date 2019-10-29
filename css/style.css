@@ -919,7 +919,7 @@ a {
 }
 
 .do {
-  background: url(../img/fone.jpg) center top/100% no-repeat;
+  background: url(../img/fone.jpg) center/100% no-repeat;
   width: 100%;
   min-height: 928px;
 }
@@ -1144,5 +1144,143 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 1820px) {
+  .need-block {
+    right: 50px;
+  }
+}
+
+@media (max-width: 1690px) {
+  .need-block {
+    right: 0;
+    padding-right: 20px;
+    width: 38%;
+  }
+  .need-text {
+    width: 52%;
+  }
+  .do {
+    background: url(../img/fone.jpg) center/cover no-repeat;
+  }
+}
+
+@media (max-width: 1600px) {
+  .need-text {
+    background: url(../img/need.jpg) no-repeat -100px 0;
+  }
+  .need-text__title {
+    left: 10px;
+  }
+  .need-text__subtitle {
+    left: 8%;
+  }
+  .need-text__play {
+    left: 15%;
+  }
+  .container {
+    max-width: 1170px;
+  }
+  .header-side {
+    max-width: 840px;
+  }
+  .header .container {
+    min-height: 110px;
+  }
+  .nav-list__item {
+    margin-right: 5px;
+  }
+  .nav-list__link {
+    font-size: 20px;
+  }
+  .offer-block {
+    margin: auto;
+  }
+  .offer-block__title {
+    font-size: 28px;
+    line-height: normal;
+  }
+  .offer-block__item {
+    margin-bottom: 15px;
+  }
+  .offer-block__link {
+    margin: 30px 0 30px -7px;
+  }
+  .wrapper-image {
+    padding-bottom: 50px;
+  }
+  .form__block {
+    margin: 20px 0;
+  }
+  .layout {
+    padding: 50px 0;
+  }
+  .layout-block {
+    margin-bottom: 30px;
+  }
+  .merchant {
+    padding: 60px 0;
+  }
+  .merchant-block {
+    margin-bottom: 30px;
+  }
+  .do-block__title {
+    margin: 50px 0 25px;
+  }
+  .do-blocks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .do-block__image {
+    display: none;
+  }
+  .do-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1450px) {
+  .need-text {
+    width: 100%;
+    background: url(../img/need.jpg) no-repeat center;
+  }
+  .need-text__title {
+    top: 22%;
+    left: 25%;
+  }
+  .need-text__subtitle {
+    bottom: auto;
+    top: 33%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .need-text__play {
+    bottom: auto;
+    top: 38%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .need-block {
+    position: static;
+    width: 100%;
+    padding-right: 0;
+    margin: 40px auto 0;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .nav {
+    display: none;
+  }
+  .header-side {
+    max-width: 360px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
