@@ -3,6 +3,10 @@
         &-block
             margin-left: 60px
 @media (max-width: 1690px)  
+    .benefits
+        &-block
+            &__text
+                max-width: 750px
     .need
         &-block
             margin-left: 20px 
@@ -55,6 +59,10 @@
         padding: 50px 0
         &-block
             margin-bottom: 30px
+            max-width: 360px
+            &__title
+                height: 54px
+                overflow: hidden
     .merchant
         padding: 60px 0
         &-block
@@ -69,6 +77,49 @@
                 display: none
         &-btn
             display: none
+    .content
+        &-block
+            &s
+                max-width: 1100px
+                margin: auto
+        &__link
+            margin: auto
+    .benefits
+        padding: 110px 0
+        &-block
+            &__text
+                max-width: 500px
+        &-btn
+            &__link
+                &-left
+                    margin-right: 0
+                    margin-bottom: 30px
+                &-right
+                    margin-bottom: 30px
+    .merchant
+        &-block
+            max-width: 350px
+            &__image
+                margin-bottom: 30px
+            &__title
+                margin: 0 0 20px
+            &__text
+                line-height: 28px
+                font-size: 18px
+    .footer
+        &-block
+            &__description
+                max-width: 470px
+    .contact
+        &__hour
+            text-align: center
+            margin-bottom: 20px
+        &-block
+            flex-direction: column
+            &__btn
+                margin: auto
+            &__or
+                margin: 20px auto    
 @media (max-width: 1450px)
     .need
         &-text
@@ -93,8 +144,76 @@
             padding-right: 0
             margin: 40px auto 0
             padding-bottom: 50px
-@media (max-width: 1120px)
+@media (max-width: 1200px)
+    .payment
+        padding: 40px 0 60px
+        &__line
+            &-violet
+                margin-left: 30px
+                margin-top: 50px
+            &-green
+                margin-left: 230px
+                margin-top: 105px
+            &-blue
+                margin-left: 130px
+                margin-top: 70px
+    .benefits
+        &::before
+            display: none
+        &-block
+            &__text
+                max-width: none
+            &s
+                flex-direction: column
+                align-items: center
+        &-btn
+            justify-content: center
+            &__link
+                &-left
+                    margin-right: 30px  
+                    margin-bottom: 45px              
+@media (max-width: 1170px)
+    .merchant
+        &__subtitle
+            font-size: 20px
+            max-width: 900px
+            line-height: 30px
+        &-block
+            max-width: none
+            &s
+                flex-direction: column
+                align-items: center
+    .container
+        max-width: 991px
+    .logo
+        margin-top: 0
     .nav
         display: none
-    .header-side
-        max-width: 360px
+    .header
+        &-side
+            max-width: 360px
+    .layout
+        &::before
+            display: none
+    .footer
+        &-block
+            &:last-child
+                margin: 25px auto 0
+            &s
+                max-width: 800px
+                margin: auto
+        &__text
+            text-align: center
+@media (max-width: 992px)
+    .payment
+        &__line
+            &-violet,
+            &-blue,
+            &-green
+                display: none
+    .content
+        margin-top: 0
+        &-block
+            &s
+                flex-direction: column
+                align-items: center
