@@ -70,9 +70,9 @@
         &__block
             margin: 20px 0
     .layout
-        padding: 50px 0
+        padding: 60px 0
         &::before
-            min-height: 530px
+            min-height: 550px
             max-width: 400px
         &-block
             margin-bottom: 30px
@@ -107,10 +107,8 @@
                 font-size: 26px
             &s
                 max-width: 1200px
-    .payment
-        &__line
-            &-blue
-                margin-left: 10px
+    .mb
+        margin: 0 0 60px
     .benefits
         padding: 110px 0
         .container
@@ -119,8 +117,6 @@
             background-position: -130px 0
             min-height: 280px
         &-block
-            &__title
-                margin: 0 0 60px
             &__text
                 max-width: 650px
                 font-size: 18px
@@ -175,17 +171,30 @@
         &::before
             background-position: -150px 0
     .content
-        max-width: 1100px
+        max-width: 870px
         &-block
+            max-width: 270px
+            padding: 20px
+            height: 210px
+            &__title
+                font-size: 22px
+            &__image
+                svg
+                    width: 40px
+                    height: 40px
+            &__description
+                margin-left: 15px
             &s
-                max-width: 1100px
+                max-width: 920px
 @media (max-width: 1400px)
     .benefits 
+        &::before
+            min-height: 265px
         .container
             max-width: 1150px
         &-block
             &__title
-                padding-left: 5px
+                margin: 1px 0 28px
                 font-size: 38px
             &__text
                 max-width: 620px
@@ -196,6 +205,8 @@
                 &-green, 
                 &-white
                     width: 200px
+    .mb
+        margin: -2px 0 60px
     .layout
         &::before
             max-width: 300px
@@ -224,23 +235,6 @@
             padding-right: 0
             margin: 40px auto 0
             padding-bottom: 50px
-@media (max-width: 1300px)
-    .content
-        max-width: 870px
-        &-block
-            max-width: 270px
-            padding: 20px
-            height: 210px
-            &__title
-                font-size: 22px
-            &__image
-                svg
-                    width: 40px
-                    height: 40px
-            &__description
-                margin-left: 15px
-            &s
-                max-width: 920px
 @media (max-width: 1250px)
     .layout
         &::before
@@ -278,11 +272,23 @@
                     max-width: 280px
                     margin-right: 15px
 @media (max-width: 1200px)
+    .content
+        &-block
+            height: 190px
+            max-width: 230px
+            &__title
+                font-size: 20px
+                margin-top: 0
+            &__text
+                font-size: 16px
+                margin: 0
+            &s
+                max-width: 780px
     .payment
         padding: 40px 0 60px
-        &__line
-            &-blue
-                margin-left: 0
+    .payments
+        &-title
+            font-size: 36px
     .benefits
         &-block
             &__text
@@ -291,11 +297,7 @@
             &__link
                 &-left
                     font-size: 20px 
-                    margin-bottom: 45px 
-    .content
-        &-block
-            &s
-                max-width: 850px             
+                    margin-bottom: 45px             
 @media (max-width: 1170px)
     .merchant
         &__subtitle
@@ -381,21 +383,6 @@
         .container
             max-width: 930px
 @media (max-width: 1070px)
-    .content
-        &-block
-            height: 190px
-            max-width: 230px
-            &__title
-                font-size: 20px
-                margin-top: 0
-            &__text
-                font-size: 16px
-                margin: 0
-            &s
-                max-width: 780px
-    .payments
-        &-title
-            font-size: 36px
     .benefits
         &-btn
             &__link
@@ -432,11 +419,17 @@
                 height: 58px
             &__indicator
                 margin-left: 0
+    .payment
+        &__line
+            &-blue
+                margin-left: 35px
 @media (max-width: 992px)
     .benefits
         &::before
             display: none
         &-block
+            &__title
+                margin: 0
             &__text
                 max-width: none
             &s
@@ -444,6 +437,10 @@
                 align-items: center
         &-btn
             justify-content: center
+    .mp
+        margin: 0 0 10px
+    .mb
+        margin: 0 0 60px
     .payment
         &__line
             &-violet,
@@ -641,6 +638,14 @@
                 font-size: 20px
                 max-width: 270px
                 height: 58px
+    .benefits
+        padding: 70px 0
+        &-block
+            &__title
+                font-size: 24px
+                line-height: normal
+    .mp
+        margin: 0
 @media (max-width: 380px)
     .logo
         padding-left: 5px
@@ -662,13 +667,6 @@
         &-block
             &__title
                 font-size: 30px
-    .benefits
-        padding: 70px 0
-        &-block
-            &__title
-                font-size: 28px
-                line-height: normal
-                margin: 0 0 30px
     .do
         &-block
             p
