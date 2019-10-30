@@ -11,7 +11,7 @@ $(document).ready(function () {
         }
     });
    
-   // document.addEventListener('contextmenu', event => event.preventDefault());
+//    document.addEventListener('contextmenu', event => event.preventDefault());
 
 // document.onkeypress = function (event) {
 //     event = (event || window.event);

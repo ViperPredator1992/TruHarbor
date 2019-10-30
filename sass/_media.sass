@@ -1,15 +1,29 @@
 @media (max-width: 1760px)
     .need
         &-block
-            margin-left: 60px
+            padding-left: 60px
+    .content
+        max-width: 1280px
+        margin: 108px auto 0
+        &-block
+            max-width: 400px
+            &s
+                max-width: 1280px
+                margin: auto
+    .layout
+        &::before
+            max-width: 430px
 @media (max-width: 1690px)  
     .benefits
+        &::before
+            background-position: -100px 0
         &-block
             &__text
                 max-width: 750px
     .need
         &-block
-            margin-left: 20px 
+            margin-left: 20px
+            padding-left: 20px 
         &-text
             width: 52%  
     .do
@@ -17,8 +31,8 @@
 @media (max-width: 1600px)
     .need
         &-block
-            margin-left: 180px
-            padding-right: 20px
+            padding-left: 50px
+            right: 60px
         &-text
             background: url(../img/need.jpg) no-repeat -100px 0  
             &__title
@@ -42,7 +56,7 @@
                 font-size: 20px
     .offer
         &-block
-            margin: auto
+            max-width: 480px
             &__title
                 font-size: 28px
                 line-height: normal
@@ -57,6 +71,9 @@
             margin: 20px 0
     .layout
         padding: 50px 0
+        &::before
+            min-height: 530px
+            max-width: 400px
         &-block
             margin-bottom: 30px
             max-width: 360px
@@ -68,31 +85,56 @@
         &-block
             margin-bottom: 30px
     .do
+        padding-bottom: 50px
+        .container
+            max-width: 1280px
         &-block
+            &:first-child
+                max-width: 580px
             &__title
                 margin: 50px 0 25px
-            &s
-                justify-content: center
-            &__image
-                display: none
         &-btn
-            display: none
+            flex-direction: column
+            &__link
+                margin-bottom: 30px
+            &__phone
+                margin-left: 0
     .content
+        max-width: 1200px
         &-block
+            max-width: 350px
+            &__title
+                font-size: 26px
             &s
-                max-width: 1100px
-                margin: auto
-        &__link
-            margin: auto
+                max-width: 1200px
+    .payment
+        &__line
+            &-blue
+                margin-left: 10px
     .benefits
         padding: 110px 0
+        .container
+            max-width: 1300px
+        &::before
+            background-position: -130px 0
+            min-height: 280px
         &-block
+            &__title
+                margin: 0 0 60px
             &__text
-                max-width: 500px
+                max-width: 650px
+                font-size: 18px
+            &__box
+                &-darkgreen, 
+                &-green, 
+                &-white
+                    width: 240px
+                    height: 190px
+            &__boxes
+                max-width: 480px
         &-btn
             &__link
                 &-left
-                    margin-right: 0
                     margin-bottom: 30px
                 &-right
                     margin-bottom: 30px
@@ -120,7 +162,44 @@
                 margin: auto
             &__or
                 margin: 20px auto    
+@media (max-width: 1470px)
+    .need
+        &-block
+            padding-left: 80px
 @media (max-width: 1450px)
+    .need
+        &-text
+            background: url(../img/need.jpg) no-repeat -180px 0
+            width: 50%
+    .benefits
+        &::before
+            background-position: -150px 0
+    .content
+        max-width: 1100px
+        &-block
+            &s
+                max-width: 1100px
+@media (max-width: 1400px)
+    .benefits 
+        .container
+            max-width: 1150px
+        &-block
+            &__title
+                padding-left: 5px
+                font-size: 38px
+            &__text
+                max-width: 620px
+            &__boxes
+                max-width: 400px
+            &__box
+                &-darkgreen,
+                &-green, 
+                &-white
+                    width: 200px
+    .layout
+        &::before
+            max-width: 300px
+@media (max-width: 1350px)
     .need
         &-text
             width: 100%
@@ -139,39 +218,84 @@
                 left: 50%
                 transform: translateX(-50%)
         &-block
+            width: 40%
             position: static
             width: 100%
             padding-right: 0
             margin: 40px auto 0
             padding-bottom: 50px
+@media (max-width: 1300px)
+    .content
+        max-width: 870px
+        &-block
+            max-width: 270px
+            padding: 20px
+            height: 210px
+            &__title
+                font-size: 22px
+            &__image
+                svg
+                    width: 40px
+                    height: 40px
+            &__description
+                margin-left: 15px
+            &s
+                max-width: 920px
+@media (max-width: 1250px)
+    .layout
+        &::before
+            max-width: 250px
+    .do
+        &-block
+            &__image
+                max-width: 570px
+    .content
+        &-block
+            &s
+                max-width: 880px
+    .benefits
+        .container
+            max-width: 1000px
+        &-block
+            &__text
+                font-size: 16px
+                line-height: 24px
+                max-width: 570px
+            &__name
+                font-size: 22px
+                width: 100px
+            &__boxes
+                max-width: 320px
+            &__box
+                &-darkgreen,
+                &-green, 
+                &-white
+                    width: 160px
+                    height: 150px
+        &-btn
+            &__link
+                &-left
+                    max-width: 280px
+                    margin-right: 15px
 @media (max-width: 1200px)
     .payment
         padding: 40px 0 60px
         &__line
-            &-violet
-                margin-left: 30px
-                margin-top: 50px
-            &-green
-                margin-left: 230px
-                margin-top: 105px
             &-blue
-                margin-left: 130px
-                margin-top: 70px
+                margin-left: 0
     .benefits
-        &::before
-            display: none
         &-block
             &__text
-                max-width: none
-            &s
-                flex-direction: column
-                align-items: center
+                max-width: 540px
         &-btn
-            justify-content: center
             &__link
                 &-left
-                    margin-right: 30px  
-                    margin-bottom: 45px              
+                    font-size: 20px 
+                    margin-bottom: 45px 
+    .content
+        &-block
+            &s
+                max-width: 850px             
 @media (max-width: 1170px)
     .merchant
         &__subtitle
@@ -241,7 +365,85 @@
     .logo
         margin-left: 0
         padding-left: 15px
+    .do
+        padding-bottom: 50px
+        &-block
+            &__title
+                font-size: 28px
+            p
+                font-size: 16px
+                line-height: 28px
+            &:first-child
+                max-width: 460px
+            &__image
+                margin-top: -85px
+    .benefits
+        .container
+            max-width: 930px
+@media (max-width: 1070px)
+    .content
+        &-block
+            height: 190px
+            max-width: 230px
+            &__title
+                font-size: 20px
+                margin-top: 0
+            &__text
+                font-size: 16px
+                margin: 0
+            &s
+                max-width: 780px
+    .payments
+        &-title
+            font-size: 36px
+    .benefits
+        &-btn
+            &__link
+                &-left
+                    font-size: 16px
+                    max-width: 230px
+                &-right
+                    font-size: 22px
+@media (max-width: 1050px)
+    .do
+        min-height: 860px
+        &-block
+            &__title
+                margin: 40px 0 15px
+            &__image
+                max-width: 500px
+@media (max-width: 1024px)
+    .offer
+        &-block
+            max-width: 420px
+            &__title
+                margin: -8px 0 34px 0
+            &__item
+                &::before
+                    left: 0
+            &__link
+                margin: 30px 0 30px 0
+    .form
+        &-block
+            &__phone
+                font-size: 18px
+            &__button
+                max-width: 150px
+                height: 58px
+            &__indicator
+                margin-left: 0
 @media (max-width: 992px)
+    .benefits
+        &::before
+            display: none
+        &-block
+            &__text
+                max-width: none
+            &s
+                flex-direction: column
+                align-items: center
+        &-btn
+            justify-content: center
     .payment
         &__line
             &-violet,
@@ -252,8 +454,9 @@
         margin-top: 0
         &-block
             &s
-                flex-direction: column
-                align-items: center
+                max-width: 580px
+        &__link
+            margin: 0 auto
     .need
         &-text
             &__title
@@ -263,6 +466,20 @@
             &__subtitle
                 width: 100%
                 text-align: center
+@media (max-width: 979px)
+    .do
+        &-block
+            &:first-child
+                max-width: none
+                margin: auto
+            &:last-child
+                margin: auto
+                margin-top: 130px
+@media (max-width: 880px)
+    .offer
+        .container
+            flex-direction: column
+            align-items: center                
 @media (max-width: 800px)                
     .offer
         &-block
@@ -338,11 +555,21 @@
                 line-height: 80px
             &__subtitle
                 font-size: 28px
+@media (max-width: 680px)
+    .content
+        &-block
+            &s
+                flex-direction: column
+                align-items: center
 @media (max-width: 520px)
     .offer
         &-block
             &__item
-                padding-left: 25px
+                padding-left: 35px
+    .do
+        &-block
+            &__image
+                max-width: 100%
 @media (max-width: 425px)
     .burger
         top: -10px
@@ -350,20 +577,30 @@
         padding-bottom: 30px
         &-block
             &__title
+                font-size: 28px
                 margin: 30px 0 15px
             p
-                font-size: 18px
-                line-height: 26px
+                font-size: 16px
+                line-height: 28px
     .offer
         padding: 0
         &-block
             &__title
-                font-size: 24px
+                font-size: 20px
                 margin: 0 0 25px
             &__item
                 padding-left: 35px
+                font-size: 18px
                 &::before
                     left: 0
+            &__link
+                font-size: 20px
+                max-width: 270px
+                height: 56px
+            &__text
+                font-size: 16px
+                line-height: 26px
+            
         &-form
             padding: 25px 15px 40px
     .form
@@ -374,6 +611,8 @@
                 margin-left: 0
             &__label
                 margin-top: 0
+            &__indicator
+                margin-left: -30px
     .need
         &-text
             &__subtitle
@@ -383,6 +622,25 @@
         &-block
             &__item
                 display: flex
+                font-size: 18px
+                line-height: 30px
+            &__text
+                font-size: 18px
+                line-height: 30px
+            &__link
+                font-size: 20px
+                max-width: 270px
+                height: 58px
+    .merchant
+        &__subtitle
+            font-size: 18px
+            line-height: 26px
+    .contact
+        &-block
+            &__btn
+                font-size: 20px
+                max-width: 270px
+                height: 58px
 @media (max-width: 380px)
     .logo
         padding-left: 5px
@@ -395,9 +653,9 @@
                 top: 2%
             &__subtitle
                 font-size: 24px
-                top: 16%
+                top: 18%
             &__play
-                top: 20%
+                top: 22%
                 font-size: 18px
                 &::before
                     margin-right: 15px   
@@ -413,9 +671,18 @@
                 margin: 0 0 30px
     .do
         &-block
+            p
+                font-size: 14px
             &__title
                 font-size: 30px
                 margin: 30px 0
+        &-btn
+            &__link
+                max-width: 250px
+                height: 54px
+                font-size: 18px
+            &__phone
+                font-size: 22px
     .footer
         padding: 50px 0
         &-block
@@ -434,9 +701,32 @@
         &-block
             flex-direction: column
             height: auto
-            padding: 25px
+            padding: 15px 10px
             &__title
                 text-align: center   
                 margin: 12px 0 
             &__description
-                margin-left: 0                       
+                margin-left: 0 
+        &__link
+            max-width: 270px
+            height: 58px
+            font-size: 20px
+    .contact
+        &-block
+            &__phone
+                font-size: 28px
+    .benefits
+        &-btn
+            &__link
+                &-left
+                    max-width: 270px
+                    height: 58px
+                    font-size: 18px
+                    margin-bottom: 25px  
+@media (max-width: 320px)
+    .need
+        &-text
+            &__subtitle
+                top: 17%
+            &__play
+                top: 21%                                      
